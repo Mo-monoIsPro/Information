@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Момчил Ганчев</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Rajdhani', sans-serif;
+      background: url('Image.gif') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      height: 100vh;
+      overflow: auto;
+      position: relative;
+    }
+
+    .overlay {
+      background: rgba(0, 0, 0, 0.6);
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      z-index: 0;
+    }
+
+    .container {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      padding: 2rem;
+      gap: 2rem;
+    }
+
+    .sidebar {
+      width: 250px;
+      text-align: center;
+      margin-right: 3rem;
+    }
+
+    .sidebar img {
+      width: 100%;
+      border-radius: 1rem;
+      box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .sidebar img:hover {
+      transform: scale(1.05);
+    }
+
+    .name {
+      margin-top: 1rem;
+      font-size: 1.5rem;
+      font-weight: normal;
+      color: #00ffff;
+    }
+
+    .title {
+      margin-top: 0rem;
+      font-size: 1.3rem;
+      font-weight: normal;
+      color: #00ffff;
+	  margin-bottom: 1rem;
+    }
+    .subtitle {
+      margin-top: 0.3rem;
+      font-size: 1.2rem;
+      color: #cccccc;
+    }
+
+    .content {
+      max-width: 600px;
+      font-size: 1.2rem;
+      line-height: 1.8;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 1.5rem;
+      border-radius: 1rem;
+      box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .content:hover {
+      transform: scale(1.02);
+    }
+
+    .content ul {
+      padding-left: 1.2rem;
+    }
+
+    .spaced-box {
+      margin-left: 3rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="sidebar">
+      <img src="Image.png" alt="Момчил Ганчев">
+      <div class="name">Момчил Ганчев</div>
+      <div class="title">Ученик в 12-ти клас в СМГ</div>
+	  <div class="subtitle">"Не съм завършил курс по</div>
+	  <div class="subtitle">педагогика, но умея да</div>
+	  <div class="subtitle">обяснявам и имам старст</div>
+	  <div class="subtitle">към математиката."</div>
+    </div>
+
+    <div class="content">
+      <p>
+        Предлагам индивидуални онлайн уроци по математика за ученици, подготвящи се за:
+      </p>
+      <ul>
+        <li>Национално външно оценяване (НВО) след 7-ми клас</li>
+        <li>Национално външно оценяване (НВО) след 10-ти клас</li>
+        <li>Държавен зрелостен изпит (ДЗИ) след 12-ти клас</li>
+      </ul>
+      <p>
+        Уроците са съобразени с нивото и нуждите на ученика, за да се постигне пълно усвояване на материала и отлично представяне на матурата.<br><br>
+        Свържи се с мен: +359 88 287 6333
+      </p>
+    </div>
+
+    <div class="content spaced-box">
+      <p>Възможни часове за уроци:</p>
+      <ul>
+	    <li>Понеделник – 9:30</li>
+        <li>Вторник – 8:00</li>
+        <li>Сряда – 8:00</li>
+        <li>Четвъртък – 8:00, 13:00</li>
+		<li>Петък – 8:00</li>
+      </ul>
+      <p>Продължителност: 1 астрономически час (60 минути)</p>
+      <p>Цена: 20 лева на урок</p>
+    </div>
+  </div>
+</body>
+</html>

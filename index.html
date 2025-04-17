@@ -28,28 +28,50 @@
     .container {
       display: flex;
       flex-direction: row;
-      gap: 2rem;
-      padding: 2rem;
+      gap: 1.66vw;
+      padding: 1.66vw;
       min-width: 1200px;
       min-height: 700px;
       box-sizing: border-box;
     }
 
     .sidebar {
-      width: 375px;
+      width: 20vw;
       text-align: left;
       align-self: flex-start;
-      margin-right: 3rem;
+      margin-right: 2.5vw;
     }
 
     .content {
-      max-width: 600px;
-	  height: 530px;
-      font-size: 1.2rem;
+      width: 20vw;
+	  height: 60vh;
+      font-size: 1vw;
       line-height: 1.8;
       background: rgba(0, 0, 0, 0.6);
-      padding: 1.5rem;
-      border-radius: 1rem;
+      padding: 1.25vw;
+      border-radius: 0.83vw;
+      box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+      transition: transform 0.5s ease-in-out;
+    }
+	.content2 {
+      width: 28vw;
+	  height: 60vh;
+      font-size: 1vw;
+      line-height: 1.8;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 1.25vw;
+      border-radius: 0.83vw;
+      box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+      transition: transform 0.5s ease-in-out;
+    }
+	.content3 {
+      width: 25vw;
+	  height: 60vh;
+      font-size: 1vw;
+      line-height: 1.8;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 1.25vw;
+      border-radius: 0.83vw;
       box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
       transition: transform 0.5s ease-in-out;
     }
@@ -57,14 +79,26 @@
     .content:hover {
       transform: scale(1.02);
     }
+	.content2:hover {
+      transform: scale(1.02);
+    }
+	.content3:hover {
+      transform: scale(1.02);
+    }
 
     .content ul {
-      padding-left: 1.2rem;
+      padding-left: 1vw;
+    }
+	.content2 ul {
+      padding-left: 1vw;
+    }
+    .content3 ul {
+      padding-left: 1vw;
     }
 
     .sidebar img {
       width: 100%;
-      border-radius: 1rem;
+      border-radius: 0.83vw;
       box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
       transition: transform 0.5s ease-in-out;
     }
@@ -74,23 +108,23 @@
     }
 
     .title {
-      margin-top: 1rem;
-      font-size: 1.3rem;
+      margin-top: 0.83vw;
+      font-size: 1.1vw;
       font-weight: normal;
       color: #00ffff;
-      margin-bottom: 1rem;
+      margin-bottom: 0.83vw;
       text-align: center;
     }
 
     .subtitle {
       list-style-position: inside;
-      margin-top: 0.5rem;
-      font-size: 1.2rem;
+      margin-top: 0.42vw;
+      font-size: 1vw;
       color: white;
     }
 
     .spaced-box {
-      margin-left: 3rem;
+      margin-left: 1.25vw;
       align-self: flex-start;
     }
   </style>
@@ -113,7 +147,7 @@
         </div>
       </div>
 
-      <div class="content">
+      <div class="content2">
 	  <p class="title">------------------------- Обща информация -------------------------</p>
         <p>
           Предлагам индивидуални и групови онлайн уроци по математика за ученици, подготвящи се за:
@@ -128,7 +162,7 @@
         <p>Свържи се с мен: +359 88 287 6333</p>
       </div>
 
-      <div class="content spaced-box">
+      <div class="content3">
         <p class="title">--------------- Възможни часове за урок ---------------</p>
         <ul>
           <li>Понеделник – 9:30</li>
@@ -137,7 +171,7 @@
           <li>Четвъртък – 8:00, 13:00</li>
           <li>Петък – 8:00</li>
         </ul>
-		<p>Всеки урок е с продължителност от 60 минути</p>
+		<p>Всеки урок е с продължителност от 60 минути.</p>
 		<p class="title">------------------------- Ценоразпис -------------------------</p>
 		<p>Индивидуален урок - 25 лева<br>Групов урок - 20 лева на човек<br><span style="color: #00ffff">20% отстъпка за братя и сестри</span></p>
       </div>
